@@ -17,13 +17,102 @@
   <body>
     <div class="container">
       <header class="header">
-        <nav>
+        <nav class="nav-bar">
           <ul class="list nav-list">
             <li><a href="./works.html" class="link nav-link">Works</a></li>
             <li><a href="./blog.html" class="link nav-link">Blog</a></li>
             <li><a href="./index.html" class="link nav-link">Contact</a></li>
           </ul>
         </nav>
+        <button class="mobile-btn js-open-menu" type="button">
+          <svg class="mobile-btn-icon" width="32px" height="22px">
+            <use href="./images/symbol-defs.svg#hamburger-menu"></use>
+          </svg>
+        </button>
+        <div class="mobile-menu js-menu-container" id="mobile-menu">
+          <button class="mobile-menu-btn js-close-menu" type="button">
+            <svg width="8px" height="8px">
+              <use href="./images/symbol-defs.svg#icon-close"></use>
+            </svg>
+          </button>
+          <nav class="mobile-menu-nav">
+            <ul class="mobile-menu-nav-list list">
+              <li>
+                <a
+                  class="mobile-menu-nav-link link"
+                  href="./works.html"
+                  title=""
+                  >Works</a
+                >
+              </li>
+              <li>
+                <a class="mobile-menu-nav-link link" href="./blog.html" title=""
+                  >Blog</a
+                >
+              </li>
+              <li>
+                <a
+                  class="mobile-menu-nav-link mobile-menu-nav-link-active link"
+                  href="./index.html"
+                  title=""
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <div class="mobile-menu-container">
+            <ul class="mobile-menu-social-list list">
+              <li>
+                <a
+                  class="social-media-link"
+                  href="https://www.instagram.com"
+                  title=""
+                  target="_blank"
+                >
+                  <svg width="30" height="30">
+                    <use href="./images/symbol-defs.svg#insta"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="social-media-link"
+                  href="https://twitter.com"
+                  title=""
+                  target="_blank"
+                >
+                  <svg class="social-media-icon" width="30" height="30">
+                    <use href="./images/symbol-defs.svg#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="social-media-link"
+                  href="https://www.facebook.com"
+                  title=""
+                  target="_blank"
+                >
+                  <svg class="social-media-icon" width="30" height="30">
+                    <use href="./images/symbol-defs.svg#fb"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="social-media-link"
+                  href="https://www.linkedin.com"
+                  title=""
+                  target="_blank"
+                >
+                  <svg class="social-media-icon" width="30" height="30">
+                    <use href="./images/symbol-defs.svg#linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </header>
       <main>
         <section class="primary-section">
@@ -185,6 +274,7 @@
           </a>
         </p>
       </footer>
+      <script src="/js/mobile-menu.js"></script>
     </div>
   </body>
 </html>
