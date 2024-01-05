@@ -53,7 +53,11 @@
 
 @media (max-width: 665px) {
   .blog-section {
-    padding: 53px 80px;
+    padding: 24px 80px;
+  }
+
+  .blog-title {
+    margin: 0;
   }
 
   .blog-title {
