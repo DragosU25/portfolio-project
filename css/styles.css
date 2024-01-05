@@ -1,0 +1,319 @@
+:root {
+  --text-color: #21243d;
+  --background-color: #edf7fa;
+  --button-color: #ff6464;
+  --Light: #8695a4;
+}
+
+body {
+  font-family: "Heebo", sans-serif;
+  font-size: 16px;
+  background-color: #fff;
+  color: var(--text-color, #21243d);
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+}
+
+.container {
+  max-width: 1152px;
+  margin: 0 auto;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+}
+
+.header {
+  padding: 20px 0;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: end;
+  gap: 33px;
+  margin-right: 60px;
+}
+
+.nav-link {
+  color: #000;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--button-color);
+}
+
+.primary-section {
+  padding: 158px 149px 71px 148px;
+}
+
+.primary-section-container {
+  display: flex;
+  gap: 106px;
+}
+
+.primary-section-description {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.primary-title {
+  font-size: 44px;
+  font-style: normal;
+  line-height: 60px;
+}
+
+.button {
+  background-color: var(--button-color);
+  color: #fff;
+  width: 208px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  padding: 17px 20px;
+  border: none;
+  border-radius: 2px;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #dd2828;
+  box-shadow: 1px 1px 1px #dd2828;
+}
+
+.section {
+  padding: 32px 148px;
+}
+
+.first-section {
+  background-color: var(--background-color, #edf7fa);
+}
+
+.subtitle-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 22px;
+}
+
+.subtitle {
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 60px;
+}
+
+.section-link {
+  color: #00a8cc;
+}
+
+.recent-posts-containers {
+  display: flex;
+  gap: 20px;
+}
+
+.recent-post-container {
+  background-color: #fff;
+  padding: 24px 21px;
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+
+.recent-post-date {
+  font-size: 18px;
+}
+
+.portfolio-list {
+  display: flex;
+  flex-direction: column;
+  gap: 29px;
+}
+
+.featured-works-container {
+  display: flex;
+  gap: 18px;
+  border-bottom: 1px solid #e0e0e0;
+
+  padding-bottom: 10px;
+}
+
+.featured-works-link {
+  color: var(--text-color);
+}
+
+.featured-works-title {
+  font-size: 30px;
+}
+
+.featured-works-card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.span-container {
+  display: flex;
+  gap: 26px;
+}
+
+.year-update {
+  border-radius: 16px;
+  background-color: #142850;
+  padding: 2px 10px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.span-text {
+  color: var(--Light, #8695a4);
+  font-size: 20px;
+}
+
+.social-media-list {
+  display: flex;
+  gap: 35px;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-text {
+  margin-top: 26px;
+  display: flex;
+  justify-content: center;
+  color: var(--text-color);
+  font-size: 14px;
+}
+
+.footer-text:hover,
+.footer-text:focus {
+  color: var(--button-color);
+}
+
+.social-media-icon {
+  fill: var(--text-color);
+}
+
+.social-media-link:hover .social-media-icon {
+  fill: var(--button-color);
+}
+
+.social-media-link:focus .social-media-icon {
+  fill: var(--button-color);
+}
+
+/* Responsive styles */
+
+@media (max-width: 1083px) {
+  .primary-title {
+    font-size: 36px;
+    line-height: 40px;
+  }
+}
+
+@media (max-width: 1003px) {
+  .primary-section-container {
+    gap: 80px;
+  }
+
+  .primary-title {
+    font-size: 32px;
+  }
+
+  .primary-section-description {
+    gap: 21px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  .featured-works-title {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 950px) {
+  .recent-posts-containers {
+    flex-wrap: wrap;
+  }
+
+  .primary-section {
+    padding: 110px 70px;
+  }
+
+  .section {
+    padding: 32px 71px;
+  }
+}
+
+@media (max-width: 790px) {
+  .primary-section-container {
+    gap: 40px;
+  }
+
+  .primary-section {
+    padding: 80px 24px;
+  }
+
+  .section {
+    padding: 32px 24px;
+  }
+}
+
+@media (max-width: 650px) {
+  .subtitle {
+    text-align: center;
+  }
+
+  nav {
+    display: none;
+  }
+  .primary-section {
+    padding: 33px 24px;
+  }
+
+  .primary-title {
+    text-align: center;
+  }
+
+  .button {
+    margin: auto;
+  }
+
+  .primary-section-container {
+    flex-wrap: wrap;
+    row-gap: 12px;
+  }
+  .primary-section-description {
+    order: 2;
+  }
+
+  .primary-section-image-container {
+    margin: auto;
+    order: 1;
+    text-align: center;
+  }
+
+  .featured-works-container {
+    flex-direction: column;
+  }
+
+  .image-container {
+    margin: auto;
+  }
+}
